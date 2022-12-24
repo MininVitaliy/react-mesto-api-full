@@ -1,0 +1,4 @@
+.header__sidebar {
+  transform: translateY(-100%);
+  position: fixed;
+}

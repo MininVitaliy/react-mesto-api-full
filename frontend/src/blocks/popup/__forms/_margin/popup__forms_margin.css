@@ -1,0 +1,12 @@
+.popup__forms_margin {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: center;
+}
+
+@media screen and (max-width: 560px) {
+  .popup__forms_margin {
+    width: 280px;
+    padding: 50px 22px;
+  }
+}

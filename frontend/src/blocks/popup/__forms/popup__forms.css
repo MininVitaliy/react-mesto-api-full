@@ -1,0 +1,9 @@
+.popup__forms {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  position: relative;
+}

@@ -1,0 +1,26 @@
+.register__save {
+  margin: 186px 0 15px;
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  padding: 0;
+  min-height: 50px;
+  border: none;
+  transition: opacity  .2s linear;
+}
+
+.register__save:hover {
+    cursor: pointer;
+    opacity: .85;
+  }
+
+@media screen and (max-width: 560px) {
+  .register__save {
+    margin-top: 143px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    min-height: 46px;
+  }
+}

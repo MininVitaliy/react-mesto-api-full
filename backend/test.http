@@ -1,0 +1,124 @@
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1ZmFlNDkwY2RiMGRlMWM4ODZjM2QiLCJpYXQiOjE2NzA4NjkyNTksImV4cCI6MTY3MTQ3NDA1OX0.nHcKs385f_KQKUDVv0fT5jffMQUVJSmbPXU_ABj9y6o
+Accept: application/json
+
+
+###
+GET http://localhost:3000/users/639b6facdaeee4157f217105
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk3N2VlZjRkMTU1OWQxMzdjZWI4MmQiLCJpYXQiOjE2NzA4NzI4NDIsImV4cCI6MTY3MTQ3NzY0Mn0.8bbWIytTSZufcXKqfr9YfS-vR3iXH9uipzJAS6eYxF8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1ZmFlNDkwY2RiMGRlMWM4ODZjM2QiLCJpYXQiOjE2NzA4NjkyNTksImV4cCI6MTY3MTQ3NDA1OX0.nHcKs385f_KQKUDVv0fT5jffMQUVJSmbPXU_ABj9y6o
+
+###
+
+POST http://localhost:3000/cards
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1ZmFlNDkwY2RiMGRlMWM4ODZjM2QiLCJpYXQiOjE2NzA4NjkyNTksImV4cCI6MTY3MTQ3NDA1OX0.nHcKs385f_KQKUDVv0fT5jffMQUVJSmbPXU_ABj9y6o
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "DASDAS" ,
+  "link": "https://ic.pics.livejournal.com/bav_eot/44066703/942996/942996_original.jpg"
+}
+
+
+###
+POST http://localhost:3000/cards
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzlkZDQ5NzhlYzA3MTNjNDQ4NWY0MzAiLCJpYXQiOjE2NzEyODc5OTQsImV4cCI6MTY3MTg5Mjc5NH0.B93VNkxWJuthkOrX16PuWDVkw6Nwfy9KzcMXwcgAvIk
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "DASDAS!!!!!" ,
+  "link": "https://ic.pics.livejournal.com/bav_eot/44066703/942996/942996_original.jpg"
+}
+
+
+###
+GET http://localhost:3000/cards
+Accept: application/json
+
+###
+
+DELETE http://localhost:3000/cards/639e07bb6b6ebf620b46f101
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzlkZDQ5NzhlYzA3MTNjNDQ4NWY0MzAiLCJpYXQiOjE2NzEyODc5OTQsImV4cCI6MTY3MTg5Mjc5NH0.B93VNkxWJuthkOrX16PuWDVkw6Nwfy9KzcMXwcgAvIk
+//Accept: application/json
+
+
+###
+
+PUT http://localhost:3000/cards/639b63df02d539e8e68437d1/likes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk3N2VlZjRkMTU1OWQxMzdjZWI4MmQiLCJpYXQiOjE2NzA4NzI4NDIsImV4cCI6MTY3MTQ3NzY0Mn0.8bbWIytTSZufcXKqfr9YfS-vR3iXH9uipzJAS6eYxF8
+//Accept: application/json
+
+###
+
+DELETE http://localhost:3000/cards/639b63df02d539e8e68437d1/likes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk3N2VlZjRkMTU1OWQxMzdjZWI4MmQiLCJpYXQiOjE2NzA4NzI4NDIsImV4cCI6MTY3MTQ3NzY0Mn0.8bbWIytTSZufcXKqfr9YfS-vR3iXH9uipzJAS6eYxF8
+//Accept: application/json
+
+####
+
+PATCH http://localhost:3000/indiasasasdas/saasdds
+Accept: application/json
+
+
+####
+
+PATCH http://localhost:3000/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk3N2VlZjRkMTU1OWQxMzdjZWI4MmQiLCJpYXQiOjE2NzA4NzI4NDIsImV4cCI6MTY3MTQ3NzY0Mn0.8bbWIytTSZufcXKqfr9YfS-vR3iXH9uipzJAS6eYxF8
+//Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Tddsdsdssds",
+  "about": "PERERERERERERE"
+}
+###
+POST http://localhost:3000/signup
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "PPPPPPsP",
+  "about": "O11111111",
+  "avatar": "https://ic.pics.livejournal.com/bav_eot/44066703/942996/942996_original.jpg",
+  "email": "vitlasas@ddwssssaasasadd.ru",
+  "password": "mnlmkkdadjja"
+}
+###
+
+POST http://localhost:3000/signin
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "vitlasas@ddwdwxk.ru",
+  "password": "mnlmkkdadjja"
+}
+###
+//"name": "",
+  //"about": "",
+  //"avatar": ,
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1ZmFlNDkwY2RiMGRlMWM4ODZjM2QiLCJpYXQiOjE2NzA4NjkyNTksImV4cCI6MTY3MTQ3NDA1OX0.nHcKs385f_KQKUDVv0fT5jffMQUVJSmbPXU_ABj9y6o
+
+###
+
+GET http://localhost:3000/cards
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1ZmFlNDkwY2RiMGRlMWM4ODZjM2QiLCJpYXQiOjE2NzA4NjkyNTksImV4cCI6MTY3MTQ3NDA1OX0.nHcKs385f_KQKUDVv0fT5jffMQUVJSmbPXU_ABj9y6o
+
+###
+
+GET http://localhost:3000/cards
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1ZmFlNDkwY2RiMGRlMWM4ODZjM2QiLCJpYXQiOjE2NzA4NjkyNTksImV4cCI6MTY3MTQ3NDA1OX0.nHcKs385f_KQKUDVv0fT5jffMQUVJSmbPXU_ABj9y6o
+
+###
+
+
+GET http://localhost:3000/users/me
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1ZmFlNDkwY2RiMGRlMWM4ODZjM2QiLCJpYXQiOjE2NzA4NjkyNTksImV4cCI6MTY3MTQ3NDA1OX0.nHcKs385f_KQKUDVv0fT5jffMQUVJSmbPXU_ABj9y6o
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1ZmFlNDkwY2RiMGRlMWM4ODZjM2QiLCJpYXQiOjE2NzA4NjkyNTksImV4cCI6MTY3MTQ3NDA1OX0.nHcKs385f_KQKUDVv0fT5jffMQUVJSmbPXU_ABj9y6o
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzllZWZiNjBkODBlNDg5OGI2OTlmZDIiLCJpYXQiOjE2NzEzNjA0NTcsImV4cCI6MTY3MTk2NTI1N30.gU9pGe76v7cyY8rcFDPJkvmlndJf-n96WXSa_00nHJ0
+
+
+###
