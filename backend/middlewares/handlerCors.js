@@ -1,7 +1,7 @@
 const allowedCors = [
   "https://mesto.russia.student.nomoredomains.club",
   "http://mesto.russia.student.nomoredomains.club",
-  "localhost:3000",
+  "http://localhost:3000",
 ];
 
 const handlerCors = (req, res, next) => {
@@ -11,7 +11,7 @@ const handlerCors = (req, res, next) => {
   const requestHeaders = req.headers["access-control-request-headers"];
 
   if (allowedCors.includes(origin)) {
-    res.header("Access-Control-Allow-Origin", origin);
+    res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Credentials", true);
   }
 
