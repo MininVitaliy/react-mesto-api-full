@@ -1,6 +1,0 @@
-.header__sidebar_open {
-    clip: rect(0 0 0 0);
-    opacity: 1;
-    position: inherit;
-    transform: translateY(0);
-}
