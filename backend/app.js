@@ -4,6 +4,7 @@ const { errors } = require('celebrate');
 const { handlerErrors } = require('./middlewares/handlerErrors');
 const routes = require('./routes/routes');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
+const handlerCors = require('./middlewares/handlerCors');
 
 const PORT = 3000;
 const app = express();
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use(routes);
 
 app.use(errorLogger);
+app.use(handlerCors);
 
 app.use(errors());
 app.use(handlerErrors);
