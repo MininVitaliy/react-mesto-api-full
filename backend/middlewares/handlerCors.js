@@ -1,6 +1,7 @@
 const allowedCors = [
   "https://mesto.russia.student.nomoredomains.club",
   "http://mesto.russia.student.nomoredomains.club",
+  "localhost:3000",
 ];
 
 const handlerCors = (req, res, next) => {
