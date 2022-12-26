@@ -8,13 +8,14 @@ const handlerCors = require('./middlewares/handlerCors');
 
 const PORT = 3000;
 const app = express();
+
 app.use(requestLogger);
+app.use(handlerCors);
 
 app.use(express.json());
 app.use(routes);
 
 app.use(errorLogger);
-app.use(handlerCors);
 
 app.use(errors());
 app.use(handlerErrors);
