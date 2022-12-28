@@ -6,15 +6,23 @@ const {
 const NotFoundError = require('../errors/ErrorNotFound');
 const ForbiddenError = require('../errors/ForbiddenError');
 const ErrorCode = require('../errors/ErrorCode');
-
+//cardUpdate
 const createCard = async (req, res, next) => {
   try {
-    const cardUpdate = await cardNew.create({
+    const {createdAt, likes, link, name, owner, _id} = await cardNew.create({
       name: req.body.name,
       link: req.body.link,
-      owner: {_id: req.user._id},
+      owner: req.user._id,
     });
-    return res.status(CREATED).json(cardUpdate);
+    return res.status(CREATED).json({
+      createdAt,
+      likes,
+      link,
+      name,
+      owner: {_id: owner},
+      _id,
+    })
+    //cardUpdate);
   } catch (e) {
     if (e.name === 'ValidationError') {
       return next(new ErrorCode('Переданы некорректные данные в методы создания карточки'));
