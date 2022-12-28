@@ -59,7 +59,7 @@ const getUserId = async (req, res, next) => {
     if (user === null) {
       return next(new NotFoundError('Пользователь не найден'));
     }
-    return res.status(SUCCESS).json({ user });
+    return res.status(SUCCESS).json(user);
   } catch (err) {
     if (err.name === 'CastError') {
       return next(new ErrorCode('Переданы некорректные данные iD'));
@@ -75,7 +75,7 @@ const getUser = async (req, res, next) => {
     if (user === null) {
       return next(new NotFoundError('Пользователь не найден'));
     }
-    return res.status(SUCCESS).json({ user });
+    return res.status(SUCCESS).json(user);
   } catch (e) {
     return next(e);
   }
