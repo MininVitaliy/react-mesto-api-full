@@ -12,7 +12,7 @@ const createCard = async (req, res, next) => {
     const cardUpdate = await cardNew.create({
       name: req.body.name,
       link: req.body.link,
-      owner: req.user._id,
+      owner: {_id: req.user._id},
     });
     return res.status(CREATED).json(cardUpdate);
   } catch (e) {
