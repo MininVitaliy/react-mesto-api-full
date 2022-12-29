@@ -94,7 +94,7 @@ const updateProfile = async (req, res, next) => {
     if (profile === null) {
       return next(new NotFoundError('Пользователь не найден'));
     }
-    return res.status(SUCCESS).json({ profile });
+    return res.status(SUCCESS).json(profile);
   } catch (e) {
     if (e.name === 'ValidationError') {
       return next(new ErrorCode('Переданы некорректные данные'));
