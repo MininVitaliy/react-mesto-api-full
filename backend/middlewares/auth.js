@@ -3,12 +3,12 @@ const { NODE_ENV, JWT_SECRET } = process.env;
 const jwt = require('jsonwebtoken');
 const UnauthorizedError = require('../errors/UnauthorizedError');
 
-const secretKey = '25a387bbe1292045e562ecbfe86f77978e6835861a1831711eb3c6b1a27ab956';
+//const secretKey = '25a387bbe1292045e562ecbfe86f77978e6835861a1831711eb3c6b1a27ab956';
 
 function createToken(payload) {
   return jwt.sign(
     payload,
-      NODE_ENV === 'production' ? JWT_SECRET : secretKey,
+      NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret',//secretKey,
     { expiresIn: '7d' },
   );
 }
@@ -21,7 +21,7 @@ const auth = (req, res, next) => {
   const token = authorization.replace('Bearer ', '');
   let payload;
   try {
-    payload = jwt.verify(token, NODE_ENV === 'production' ? JWT_SECRET : secretKey);
+    payload = jwt.verify(token, NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret');//secretKey);
   } catch (err) {
     return next(new UnauthorizedError('Неправильные почта или пароль'));
   }
