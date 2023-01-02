@@ -6,8 +6,10 @@ const UnauthorizedError = require('../errors/UnauthorizedError');
 let key = 'dev-secret';
 if (NODE_ENV === 'production') {
   key = JWT_SECRET;
+  console.log('rtr')
 } else {
   key = 'dev-secret';
+  console.log('пук')
 }
 
 function createToken(payload) {

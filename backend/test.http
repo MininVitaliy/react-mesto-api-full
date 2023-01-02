@@ -82,7 +82,7 @@ Content-Type: application/json
   "name": "PPPPPPsP",
   "about": "O11111111",
   "avatar": "https://ic.pics.livejournal.com/bav_eot/44066703/942996/942996_original.jpg",
-  "email": "vitlasas@ddwssssasadd.ru",
+  "email": "vitlasas@ddwsssssssasadd.ru",
   "password": "mnlmkkdadjja"
 }
 ###
@@ -92,7 +92,7 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "email": "vitlasas@ddwssssd.ru",
+  "email": "vitlasas@ddwsssssssasadd.ru",
   "password": "mnlmkkdadjja"
 }
 ###
@@ -100,8 +100,7 @@ Content-Type: application/json
   //"about": "",
   //"avatar": ,
 GET http://localhost:3000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Mzk1ZmFlNDkwY2RiMGRlMWM4ODZjM2QiLCJpYXQiOjE2NzA4NjkyNTksImV4cCI6MTY3MTQ3NDA1OX0.nHcKs385f_KQKUDVv0fT5jffMQUVJSmbPXU_ABj9y6o
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2IyYTVhZTY1MGI5MTNmYmVlNDY1NDUiLCJpYXQiOjE2NzI2NTIyMTcsImV4cCI6MTY3MzI1NzAxN30.Gr1okClHM6R9fCfEVcahILjEVt52SzPtThBuEUNwTws
 ###
 
 GET http://localhost:3000/cards
