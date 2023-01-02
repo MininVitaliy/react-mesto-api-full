@@ -3,7 +3,7 @@ const { NODE_ENV, JWT_SECRET } = process.env;
 const jwt = require('jsonwebtoken');
 const UnauthorizedError = require('../errors/UnauthorizedError');
 
-let key = 'dev-secret';
+let key;
 if (NODE_ENV === 'production') {
   key = JWT_SECRET;
 } else {
