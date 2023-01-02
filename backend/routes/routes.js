@@ -41,6 +41,6 @@ app.post('/signup', celebrate({
 }), createUser);
 app.use('/users', auth, routerUser);
 app.use('/cards', auth, routerCard);
-app.use('*', (req, res, next) => next(new NotFoundError('Нет такой стараницы приложения')));
+app.use('*', (req, res, next) => next(new NotFoundError('Нет такой страницы приложения')));
 
 module.exports = app;
